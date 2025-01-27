@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrradverleih - Registrierung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Fahrradverleih/h1>
+    <form id="registerForm">
+        <label for="personalNumber">Personalnummer*</label>
+        <input type="text" id="personalNumber" required>
+        <label for="password">Passwort*</label>
+        <input type="password" id="password" required>
+        <p class="instructions">
+            Sie erhalten nach Bestätigung eine E-Mail mit einem Link, dort können Sie Ihr Passwort festlegen.
+        </p>
+        <button type="submit" class="btn">Registrieren</button>
+    </form>
+    <p id="message"></p>
+    <button onclick="window.history.back()" class="btn-back">Zurück</button>
+</div>
+<footer>
+    <p>Niederweser Verlag GmbH - seit 1949</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

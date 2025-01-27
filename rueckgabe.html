@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fahrzeugrückgabe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Fahrzeugrückgabe</h1>
+  <p>Geben Sie die Buchungs-ID und den Rückgabeort ein:</p>
+  <form id="returnForm">
+    <label for="bookingId">Buchungs-ID:</label>
+    <input type="text" id="bookingId" required>
+    <label for="location">Rückgabeort:</label>
+    <input type="text" id="location" required>
+    <button type="submit">Fahrzeug zurückgeben</button>
+  </form>
+  <p id="message" style="margin-top: 20px;"></p>
+
+  <h2>Aktive Buchungen</h2>
+  <table id="activeBookingsTable">
+    <thead>
+    <tr>
+      <th>Buchungs-ID</th>
+      <th>Fahrzeugnummer</th>
+      <th>Fahrzeugtyp</th>
+      <th>Startdatum</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Buchungsdaten werden hier dynamisch eingefügt -->
+    </tbody>
+  </table>
+</div>
+<footer>
+  <p>Niederweser Verlag GmbH - seit 1949</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
