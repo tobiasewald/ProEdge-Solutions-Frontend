@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fahrradverleih</title>
+    <title>Fahrradverleih - Buchung</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="container">
     <h1>Fahrradverleih</h1>
-    <p>Wählen Sie ein Fahrzeug aus der Liste:</p>
+    <p>Wählen Sie ein Fahrzeug aus:</p>
+
+    <!-- Reservierungsdatum -->
+    <div class="date-input">
+        <label for="reservationDate">Reservierungsdatum (optional):</label>
+        <input type="date" id="reservationDate">
+    </div>
+
+    <!-- Fahrzeugtabelle -->
     <div class="table-container">
         <table id="vehicleTable">
             <thead>
             <tr>
-                <th>Fahrzeugnummer</th>
+                <th>Nummer</th>
                 <th>Beschreibung</th>
                 <th>Standort</th>
                 <th>Akkukapazität</th>
-                <th>Fahrzeugtyp</th>
+                <th>Art</th>
+                <th>Status</th>
                 <th>Aktion</th>
             </tr>
             </thead>
             <tbody>
-            <!-- Fahrzeuge werden hier dynamisch eingefügt -->
+            <!-- Dynamisch eingefügt -->
             </tbody>
         </table>
     </div>
-    <p id="message"></p>
+
     <button onclick="window.history.back()" class="btn-back">Zurück</button>
 </div>
 <footer>
